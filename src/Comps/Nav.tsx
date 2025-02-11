@@ -1,23 +1,32 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { BrowserRouter as Link } from "react-router-dom";
+import Background from "../assets/icon.png";
 
-const BasicNavbar: React.FC = () => {
+const NavbarComponent: React.FC = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand as={Link}>MySite</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Brand href="/">
+          <img
+            src={Background}
+            width="50"
+            height="50"
+            className="d-inline-block align-top"
+            alt="Writing Drive"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link}>Home</Nav.Link>
-            <Nav.Link as={Link}>About</Nav.Link>
-            <Nav.Link as={Link}>Contact</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/blogs">Blogs</Nav.Link>
           </Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
 
-export default BasicNavbar;
+export default NavbarComponent;

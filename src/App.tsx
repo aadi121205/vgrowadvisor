@@ -1,9 +1,11 @@
 import viteLogo from "/icon.png";
 import "./App.css";
+import BasicNavbar from "./Comps/Nav";
 
 function App() {
   return (
     <>
+      <BasicNavbar></BasicNavbar>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,7 +18,8 @@ function App() {
         2 weeks with exciting new features and services. In the meantime, if you
         need assistance or want to get in touch, please reach us at: <br></br>
         <b>
-          Phone: +91 9873097291 <br></br>Email: vaibhav@vgrowadvisor.com <br></br>
+          Phone: +91 9873097291 <br></br>Email: vaibhav@vgrowadvisor.com{" "}
+          <br></br>
         </b>
         We appreciate your patience and look forward to welcoming you back soon!{" "}
       </p>

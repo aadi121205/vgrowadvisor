@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import viteLogo from "/icon.png";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>Vgrow Advisor</h1>
+      <h2>Thank you for visiting VgrowAdvisor!</h2>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        We’re currently building our site to serve you better. We’ll be back in
+        2 weeks with exciting new features and services. In the meantime, if you
+        need assistance or want to get in touch, please reach us at: <br></br>
+        <b>
+          Phone: +91 9873097291 <br></br>Email: vaibhav@vgrowadvisor.com <br></br>
+        </b>
+        We appreciate your patience and look forward to welcoming you back soon!{" "}
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
